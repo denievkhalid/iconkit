@@ -15,3 +15,9 @@ export const isArray = (value: unknown): value is unknown[] =>
  */
 export const isFunction = (value: unknown): value is Function =>
   typeof value === "function";
+
+export const isEmpty = (value: unknown) => {
+  if (isArray(value)) {
+    return value.length === 0;
+  }
+};
