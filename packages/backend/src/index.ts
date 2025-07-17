@@ -7,4 +7,4 @@
 //   port: getEnv('port'),
 // }).start();
 
-import { isArray } from 'shared';
+import { isArray } from '@shared';

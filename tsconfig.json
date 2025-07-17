@@ -9,8 +9,10 @@
     "outDir": "dist",
     "baseUrl": ".",
     "paths": {
-      "shared": ["packages/shared/src/*"]
-    }
+      "@multer": ["packages/multer/src/index.ts"],
+      "@shared": ["packages/shared/src/index.ts"],
+    },
+    "typeRoots": ["types", "node_modules/@types"]
   },
   "include": ["packages"]
 }

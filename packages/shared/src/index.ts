@@ -1,2 +1,2 @@
-export const isArray = (value: unknown): value is unknown[] =>
-  Array.isArray(value);
+export { getEnv } from "./utils/env";
+export { isArray, isFunction } from "./utils/is";

@@ -1,0 +1,44 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "dev:build": "tsup src/index.ts --format esm --watch --dts --silent",
+    "dev:start": "nodemon --watch dist --ext js --exec node dist/index.js",
+    "dev": "npm-run-all --parallel dev:build dev:start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@octokit/rest": "^22.0.0",
+    "@svgr/core": "^8.1.0",
+    "@svgr/plugin-jsx": "^8.1.0",
+    "@svgr/plugin-prettier": "^8.1.0",
+    "@svgr/plugin-svgo": "^8.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.1.0",
+    "express": "^5.1.0",
+    "express-async-handler": "^1.2.0",
+    "multer": "^2.0.1",
+    "nanoid": "^5.1.5",
+    "pify": "^6.1.0",
+    "simple-git": "^3.28.0",
+    "svgo": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/multer": "^2.0.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.5.1",
+    "nodemon": "^3.1.10",
+    "prettier": "^3.6.2",
+    "ts-node-dev": "^2.0.0",
+    "tsconfig-paths": "^4.2.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3"
+  }
+}
