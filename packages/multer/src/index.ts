@@ -1,6 +1,7 @@
 import multer from "multer";
 import path from "path";
 import { nanoid } from "nanoid";
+import { Paths } from "@config";
 
 /**
  * Multer storage configuration for saving uploaded files to the 'upload' directory.
@@ -14,7 +15,7 @@ const storage = multer.diskStorage({
    * @param {Function} cb - Callback to specify the upload destination.
    */
   destination: (req, file, cb) => {
-    cb(null, path.resolve(process.cwd(), "upload"));
+    cb(null, path.resolve(process.cwd(), Paths.Upload));
   },
 
   /**
