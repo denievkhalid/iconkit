@@ -1,0 +1,9 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "composite": true,      // если используешь project references
+    "outDir": "dist",
+    "rootDir": "src"
+  },
+  "include": ["src"]
+}
