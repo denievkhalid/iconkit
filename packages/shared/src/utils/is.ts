@@ -1,5 +1,5 @@
 /**
- * Type guard: checks if value is an array.
+ * Checks if the value is an array.
  *
  * @param value - Value to check.
  * @returns True if it's an array.
@@ -8,7 +8,7 @@ export const isArray = (value: unknown): value is unknown[] =>
   Array.isArray(value);
 
 /**
- * Type guard: checks if value is a function.
+ * Checks if the value is a callable function.
  *
  * @param value - Value to check.
  * @returns True if it's a function.
