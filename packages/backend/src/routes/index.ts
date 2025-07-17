@@ -1,1 +1,0 @@
-export { uploadRouter } from './upload';

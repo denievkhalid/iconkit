@@ -1,1 +1,0 @@
-export { IconNPiCX2029K } from './icons/IconNPiCX2029K';

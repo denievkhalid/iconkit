@@ -1,1 +1,0 @@
-export { iconRouter } from './icon';

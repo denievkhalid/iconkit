@@ -1,1 +1,0 @@
-export { 35rvLcRfNB } from './icons/35rvLcRfNB';
