@@ -1,10 +1,4 @@
 {
-  "files": [],
-  "references": [
-    { "path": "packages/config" },
-    { "path": "packages/multer" },
-    { "path": "packages/shared" }
-  ],
   "compilerOptions": {
     "target": "es2016",
     "module": "commonjs",
@@ -15,6 +9,7 @@
     "baseUrl": ".",
     "paths": {
       "@config": ["packages/config/src/index.ts"],
+      "@github": ["packages/github/src/index.ts"],
       "@multer": ["packages/multer/src/index.ts"],
       "@shared": ["packages/shared/src/index.ts"]
     },

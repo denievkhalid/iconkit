@@ -1,7 +1,7 @@
-import asyncHandler from "express-async-handler";
 import express from "express";
+import { generateRepoName } from "@github";
 import multer from "@multer";
-import { isEmpty } from "@shared";
+import { asyncHandler, getOptimizeSvg } from "@shared";
 
 export const uploadRouter = express.Router();
 
@@ -11,9 +11,10 @@ uploadRouter.post(
   asyncHandler(async (req, res) => {
     const files = req.files as Express.Multer.File[];
 
-    if (!isEmpty(files)) {
-      for (const file of files) {
-      }
+    const repoName = generateRepoName();
+    getOptimizeSvg("12");
+
+    for (const file of files) {
     }
   }),
 );
