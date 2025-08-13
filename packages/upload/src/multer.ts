@@ -34,7 +34,7 @@ const storage = multer.diskStorage({
  * - SVG file uploads only
  * - Max file size of 5MB
  */
-export default multer({
+export const upload = multer({
   storage,
   limits: {
     fileSize: 5 * 1024 * 1024, // 5 MB

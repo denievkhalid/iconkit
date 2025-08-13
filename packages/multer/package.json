@@ -1,8 +1,0 @@
-{
-  "name": "multer",
-  "version": "1.0.0",
-  "main": "index.js",
-  "devDependencies": {
-    "@types/multer": "^2.0.0"
-  }
-}

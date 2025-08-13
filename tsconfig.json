@@ -9,9 +9,9 @@
     "baseUrl": ".",
     "paths": {
       "@config": ["packages/config/src/index.ts"],
-      "@github": ["packages/github/src/index.ts"],
-      "@multer": ["packages/multer/src/index.ts"],
-      "@shared": ["packages/shared/src/index.ts"]
+      "@git": ["packages/git/src/index.ts"],
+      "@shared": ["packages/shared/src/index.ts"],
+      "@upload": ["packages/upload/src/index.ts"],
     },
     "typeRoots": ["types", "node_modules/@types"]
   }

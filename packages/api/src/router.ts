@@ -1,20 +1,33 @@
-import express from "express";
-import { generateRepoName } from "@github";
-import multer from "@multer";
-import { asyncHandler, getOptimizeSvg } from "@shared";
+import { Git } from "@git";
+import {
+  asyncHandler,
+  forOf,
+  getEnv,
+  getEnvs,
+  getRouter,
+  processSvgFile,
+} from "@shared";
+import { upload, UploadFiles } from "@upload";
 
-export const uploadRouter = express.Router();
-
-uploadRouter.post(
+export default getRouter().post(
   "/",
-  multer.array("icons"),
+  upload.array(getEnv("upload_icons_field")),
   asyncHandler(async (req, res) => {
-    const files = req.files as Express.Multer.File[];
+    const files = req.files as UploadFiles;
 
-    const repoName = generateRepoName();
-    getOptimizeSvg("12");
+    //console.log(files);
+    return;
 
-    for (const file of files) {
-    }
+    // const { GITHUB_AUTH_TOKEN, GITHUB_ORG } = getEnvs([
+    //   "github_org",
+    //   "github_auth_token",
+    // ]);
+    //
+    // await Git.init({
+    //   authToken: GITHUB_AUTH_TOKEN,
+    //   org: GITHUB_ORG,
+    // }).createRepo();
+    //
+    // forOf(files, processSvgFile);
   }),
 );

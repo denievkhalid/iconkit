@@ -8,6 +8,6 @@
     "concurrently": "^9.2.0"
   },
   "scripts": {
-    "dev": "concurrently \"npm run dev --workspace frontend\" \"npm run dev --workspace backend\""
+    "dev": "concurrently \"npm run dev --workspace api\" \"npm run dev --workspace backend\""
   }
 }

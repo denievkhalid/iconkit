@@ -1,7 +1,7 @@
 import cors from "cors";
 import express from "express";
 import { getEnv } from "@shared";
-import { uploadRouter } from "./router";
+import uploadRouter from "./router";
 
 const app = express();
 

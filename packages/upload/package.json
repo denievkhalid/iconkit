@@ -1,0 +1,12 @@
+{
+  "name": "upload",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "main": "src/index.ts",
+  "devDependencies": {
+    "@types/multer": "^2.0.0"
+  },
+  "dependencies": {
+    "multer": "^2.0.2"
+  }
+}
